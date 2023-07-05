@@ -17,18 +17,17 @@ gulp.task('clean', function () {
   // Компіляція SCSS у CSS
 gulp.task('sass', function () {
     return gulp.src('src/scss/**/*.scss')
-      .pipe(sass().on('error', sass.logError))
-      .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
-        cascade: false
-      }))
-      .pipe(cleanCSS({
-        compatibility: 'ie8'
-      }))
-      .pipe(gulp.dest('dist/css'))
-      .pipe(browserSync.stream());
-  });
-
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 2 versions'], // Обновленная настройка
+            cascade: false
+        }))
+        .pipe(cleanCSS({
+            compatibility: 'ie8'
+        }))
+        .pipe(gulp.dest('dist/css'))
+        .pipe(browserSync.stream());
+});
   // Мініфікація та конкатенація JS файлів
 gulp.task('js', function () {
     return gulp.src('src/js/**/*.js')
@@ -40,7 +39,7 @@ gulp.task('js', function () {
   
   // Оптимізація зображень
   gulp.task('imagemin', function () {
-    return gulp.src('src/img/**/*')
+    return gulp.src('src/img/*')
       .pipe(imagemin())
       .pipe(gulp.dest('dist/img'));
   });

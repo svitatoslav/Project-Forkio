@@ -1,0 +1,137 @@
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+.header__container {
+  margin: 0 auto;
+  max-width: 1200px;
+
+}
+
+.header {
+  background-image: url("../img/header__section.png");
+  background-repeat: no-repeat;
+  min-height: 750px;
+  background-position: center;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 10px 0 10px;
+}
+
+.header__logo-item {
+  display: flex;
+  align-items: center;
+
+}
+
+.header__logo-link {
+  transition: .2s ease;
+}
+
+
+.header__logo-link {
+  margin-left: 10px;
+  text-transform: uppercase;
+  @include lato700;
+  font-size: 24px;
+}
+
+
+.header__nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav__link {
+  @include font16;
+  @include montserrat700;
+  transition: .2s ease;
+
+  &:hover {
+    color: $purple;
+  }
+}
+
+.nav__link-item {
+  margin-right: 45px;
+}
+
+
+.header__btn {
+  background: $white;
+  color: $purple;
+  padding: 8px 34px;
+  border-radius: 20px;
+  border: 1px solid $purple;
+  @include font16;
+  @include montserrat700;
+  transition: .2s ease;
+}
+
+.header__btn:hover {
+  color: $white;
+  background: $purple;
+}
+
+// Middle header section
+
+
+.middle__header-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.middle__title {
+  @include montserrat700;
+  font-size: 82px;
+  color: $white;
+  margin-bottom: 10px;
+}
+
+.middle__subtitle {
+  @include lato400;
+  font-size: 30px;
+  color: $purple;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: $small__text;
+  font-size: 16px;
+  @include montserrat400;
+}
+
+.big__header-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  padding: 22px 0;
+  width: 388px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.font__text {
+  font-size: 14px;
+  position: absolute;
+  bottom: -8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+// people talk start
+
+
+
+
+
