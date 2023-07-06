@@ -6,7 +6,7 @@ document.querySelectorAll('.header__logo-img, .header__logo-link').forEach(funct
 
     element.addEventListener('mouseout', function() {
         document.querySelector('.header__logo').src = "dist/img/header-logo.svg";
-        document.querySelector('.header__logo-link').style.color = "#fff"; // Здесь указываете цвет ссылки по умолчанию
+        document.querySelector('.header__logo-link').style.color = "#fff";
     });
 });
 

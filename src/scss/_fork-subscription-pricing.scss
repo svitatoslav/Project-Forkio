@@ -20,12 +20,7 @@ a {
     margin-bottom: 140px;
   }
   
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 35px 10px 0 10px;
-  }
+
   
   .header__logo-item {
     display: flex;
@@ -40,27 +35,7 @@ a {
     font-size: 24px;
     transition: .2s ease;
   }
-  
-  
-  .header__nav {
-    display: flex;
-    margin-left: auto;
-  }
-  
-  .nav__link {
-    @include font16;
-    @include montserrat700;
-    transition: .2s ease;
-  
-    &:hover {
-      color: $purple;
-    }
-  }
-  
-  .nav__link-item {
-    margin-right: 45px;
-  }
-  
+
   
   .header__btn {
     background: $white;
@@ -86,20 +61,16 @@ a {
     text-align: center;
   }
   
-  .middle__title {
-    @include montserrat700;
-    font-size: 82px;
-    color: $white;
-    margin-bottom: 10px;
-  }
+
+.people-title {
+  @include font48;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 70px;
+}
   
-  .middle__subtitle {
-    @include lato400;
-    font-size: 30px;
-    color: $purple;
-    margin-bottom: 10px;
-  }
-  
+
+
   .text {
     color: $small__text;
     font-size: 16px;

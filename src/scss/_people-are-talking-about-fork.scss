@@ -5,6 +5,39 @@
     background-repeat: no-repeat;
     padding: 0 10px;
   }
+
+.nav__link-item {
+  margin-right: 45px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 10px 0 10px;
+}
+
+.nav__links {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav__link {
+  @include font16;
+  @include montserrat700;
+  transition: .2s ease;
+
+  &:hover {
+    color: $purple;
+  }
+}
+
+.middle__subtitle {
+  @include lato400;
+  font-size: 30px;
+  color: $purple;
+  margin-bottom: 10px;
+}
   
   .main__wrapper {
     display: grid;
@@ -44,16 +77,19 @@
     grid-area: main6;
     position: relative;
   }
-  
-  
-  .people-title {
-    @include font48;
-    text-align: center;
-    padding-top: 100px;
-    margin-bottom: 70px;
-  }
-  
-  .main__item {
+
+.middle__title {
+  @include montserrat700;
+  font-size: 82px;
+  color: $white;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+.main__item {
     max-width: 316px;
     text-align: center;
     margin-bottom: 40px;
@@ -77,9 +113,10 @@
     position: relative;
     padding: 60px 0 20px;
     line-height: 21px;
-  
   }
-  
+
+
+
   .hamburger {
     position: absolute;
     top: 3%;
@@ -90,7 +127,7 @@
     z-index: 10;
   }
   
-  .bar {
+  .hamb__bar {
     display: block;
     width: 18px;
     height: 2px;
@@ -105,19 +142,19 @@
     }
   }
   
-  .hamburger.active .bar:nth-child(1) {
+  .hamburger.active .hamb__bar:nth-child(1) {
     opacity: 0;
   }
   
-  .hamburger.active .bar:nth-child(2) {
+  .hamburger.active .hamb__bar:nth-child(2) {
     transform: translateY(-2px) rotate(45deg);
   }
   
-  .hamburger.active .bar:nth-child(3) {
+  .hamburger.active .hamb__bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
   
-  @media screen and (min-width: 993px) and (max-width: 1200px) {
+  @media screen and (min-width: 993px) and (max-width: 1199px) {
   
     .main__wrapper {
       display: grid;
@@ -206,7 +243,11 @@
     }
   
     .nav__link-item {
-      margin: 0;
+      margin-right: 0;
+    }
+
+    .middle__subtitle {
+      font-size: 24px;
     }
   
   }
@@ -236,7 +277,7 @@
       position: absolute;
       z-index: 1;
       top: 100%;
-      max-width: 290px; /* Добавлено */
+      max-width: 290px;
       flex-direction: column;
       display: none;
       background-color: $hamb;
@@ -267,11 +308,11 @@
     .nav__link:active::before, .nav__link:focus::before {
       content: "";
       position: absolute;
-      height: 53px; /* Высоту, ширину и цвет квадратика можно менять по вашему усмотрению */
+      height: 53px;
       width: 8px;
       background-color: $purple;
       left: 1px;
-      transform: translateY(-20%)/* Подберите это значение, чтобы квадратик был именно слева от ссылки */
+      transform: translateY(-20%)
     }
   
     .header__btn {
@@ -284,16 +325,17 @@
       max-width: 250px;
       padding: 0 0 20px;
     }
-  
-    .middle__title {
-      @include font48;
-    }
+
   
     .people-title {
       font-size: 36px;
       line-height: 48px;
       padding-top: 50px;
       margin-bottom: 35px;
+    }
+
+    .middle__title {
+      @include font48;
     }
   
     .middle__subtitle {
