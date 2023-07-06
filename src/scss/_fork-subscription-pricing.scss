@@ -1,0 +1,189 @@
+.block-cards {
+    @include flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.subscription-pricing {
+    @include montserrat-700;
+    color: $white;
+    font-size: 48px;
+    line-height: 50px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.fork-subscription-pricing {
+    padding: 40px 0;
+    background: $subscribtion-price;
+}
+
+.card {
+    @include flex;
+    flex-direction: column;
+    position: relative;
+    width: 23%;
+    height: 450px;
+    background: $card-background;
+
+    & hidden-line {
+        opacity: 0;
+    }
+
+    & h4 {
+        @include montserrat-400;
+        color: $white;
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 24px;
+        word-wrap: break-word;
+        padding: 30px 0;
+        text-align: center;
+    }
+}
+
+.special-card {
+    @include flex;
+    flex-direction: column;
+    position: relative;
+    background: $special-card-background;
+    width: 23%;
+    height: 550px;
+
+    & h4 {
+        @include montserrat-400;
+        color: $white;
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 24px;
+        word-wrap: break-word;
+        text-align: center;
+        padding: 30px 0;
+    }
+}
+
+.price {
+    @include montserrat-400;
+    color: $white;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 90px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-bottom: 3%;
+
+    & span {
+        @include montserrat-700;
+        color: $white;
+        font-size: 60px;
+        text-transform: uppercase;
+        line-height: 90px;
+        word-wrap: break-word;
+    }
+
+}
+
+.special-price {
+    font-size: 82px;
+
+    & span {
+        font-size: 82px;
+    }
+}
+
+.monthly {
+    @include montserrat-400;
+    color: $white;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 16px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.bar {
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: $card-bar;
+    margin: 15% auto;
+}
+
+.license {
+    @include montserrat-400;
+    color: $white;
+    font-size: 16px;
+    line-height: 18px;
+    word-wrap: break-word;
+    text-align: center;
+    max-width: 98%;
+}
+
+.special-license {
+    margin-bottom: 20%;
+}
+
+.purchase-btn {
+    @include montserrat-400;
+    color: $white;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 15px;
+    word-wrap: break-word;
+    border: 1px solid #79636b; ;
+    border-radius: 30px;
+    padding: 10px 28px;
+    background: $purchase-btn-background;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15%;
+}
+
+.h4-container {
+    width: 100%;
+    background: #79636b;
+    position: absolute;
+    top: 0;
+}
+
+.h4-special-container {
+    width: 100%;
+    background: #412d42;
+    position: absolute;
+    top: 0;
+}
+
+// MEDIA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@media screen and (min-width: 481px) and (max-width: 992px) {
+    .block-cards {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    .card {
+        width: 35%;
+    }
+
+    .special-card {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .subscription-pricing {
+        font-size: 28px;
+    }
+
+    .block-cards {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .special-card {
+        width: 90%;
+    }
+}

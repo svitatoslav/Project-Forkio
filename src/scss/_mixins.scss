@@ -1,0 +1,32 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin montserrat-400 {
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+@mixin montserrat-700 {
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+@mixin icons-text-caption {
+    @include montserrat-400();
+    color: #323232;
+    font-size: 16px;
+    line-height: 21px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+@mixin icons-text-p {
+    @include montserrat-400();
+    color: #848E97;
+    font-size: 14px;
+    line-height: 21px;
+    word-wrap: break-word;
+}
