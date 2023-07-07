@@ -85,14 +85,6 @@
   margin-bottom: 10px;
 }
 
-.people-title {
-  @include font48;
-  text-align: center;
-  padding-top: 100px;
-  margin-bottom: 70px;
-}
-
-
 .main__item {
     max-width: 316px;
     text-align: center;
@@ -123,12 +115,24 @@
       bottom: 0;
       left: 7%;
       max-width: 780px;
-      width: 90%;
+      width: 100%;
+      background-color: $border;
+      content: "";
+      height: 2px;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 7%;
+      max-width: 780px;
+      width: 100%;
       background-color: $border;
       content: "";
       height: 2px;
     }
   }
+
 
 
   .hamburger {
@@ -191,7 +195,7 @@
       margin-top: 40px;
     }
     .people__subtext::after {
-      max-width: 600px;
+      max-width: 555px;
       left: 18%;
     }
 
@@ -203,8 +207,8 @@
   @media screen and (min-width: 481px) and (max-width: 992px) {
 
     .people__subtext::after {
-      max-width: 550px;
-      margin: 0 auto;
+        margin: 0 auto;
+        max-width: 600px;
     }
   
     .header__logo-item {
@@ -273,11 +277,15 @@ justify-self: end;
     .middle__subtitle {
       font-size: 24px;
     }
-
-    .people-title {
-      font-size: 42px;
-    }
   
+  }
+
+  @media screen and (min-width: 479px) and (max-width: 700px) {
+    .people__subtext::after {
+        max-width: 400px;
+        right: 0;
+        left: 0;
+    }
   }
   
   
@@ -285,7 +293,12 @@ justify-self: end;
 
     .people__subtext::after {
       max-width: 250px;
-      margin: 0 auto;
+      left: 0;
+    }
+
+    .people__subtext::after {
+      max-width: 250px;
+      left: 0;
     }
   
     .nav {
