@@ -1,0 +1,295 @@
+.here-is-what-you-get {
+    position: relative;
+    @include flex;
+    flex-direction: column;
+    margin-top: 60px;
+    background: $here-is-what-you-get-background;
+    padding: 80px 10px;
+    overflow: hidden;
+}
+
+.icon-block-flex {
+    @include flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.icons-text-container {
+    max-width: 34%;
+    margin-right: 55%;
+}
+
+.icons-text-caption {
+    @include icons-text-caption;
+}
+
+.icons-text-p {
+    @include icons-text-p;
+}
+
+.right-side {
+    position: absolute;
+    right: 0;
+
+    & h3 {
+        @include montserrat-700;
+        color: $here-is-what-you-get;
+        font-size: 48px;
+        line-height: 50px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    & h3::before {
+        content: "<";
+        margin-right: 2px;
+    }
+
+    & h3::after {
+        content: ">";
+        margin-left: 2px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+// MEDIA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@media screen and (min-width: 1200px) {
+    .right-side {
+
+        & img {
+            width: 650px;
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+    .right-side {
+
+        & h3 {
+            font-size: 40px;
+        }
+
+        & img {
+           max-width: 570px;
+        }
+    }
+}
+
+@media screen and (min-width: 690px) and (max-width: 992px) {
+    .right-side {
+       top: 6%;
+        left: 0;
+
+        & h3 {
+            font-size: 42px;
+        }
+
+        & img {
+            display: none;
+        }
+    }
+
+    .here-is-what-you-get {
+        padding: 140px 10px 0 10px;
+        background: $white;
+    }
+
+    .icons-text-container {
+        max-width: 85%;
+        margin-right: -2%;
+    }
+
+    .icon-block-flex {
+        padding: 3%;
+    }
+
+    .hidden {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 658px) and (max-width: 722px) {
+    .here-is-what-you-get {
+        // margin-top: 20%;
+        background: $white;
+    }
+
+    .right-side {
+        top: 2%;
+        left: 0;
+
+        & h3 {
+            font-size: 36px;
+        }
+
+        & img {
+            display: none;
+        }
+    }
+
+    .icons-text-container {
+        max-width: 80%;
+        margin-right: 1%;
+    }
+
+    .hidden {
+        display: block;
+        margin-left: auto;
+        max-width: 500px;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 657px) {
+    .here-is-what-you-get {
+        // margin-top: 25%;
+        background: $white;
+    }
+
+    .right-side {
+        top: 1%;
+        left: 0;
+
+        & h3 {
+            font-size: 30px;
+        }
+
+        & img {
+            display: none;
+        }
+    }
+
+    .icons-text-container {
+        max-width: 75%;
+        margin-right: 1%;
+    }
+
+    .hidden {
+        display: block;
+        margin-left: auto;
+        max-width: 450px;
+    }
+}
+
+@media screen and (min-width: 347px) and (max-width: 480px) {
+    .here-is-what-you-get {
+        padding: 160px 10px;
+        background: $white;
+    }
+
+    .right-side {
+        top: 1%;
+        left: 0;
+
+        & h3 {
+            font-size: 30px;
+        }
+
+        & img {
+            display: none;
+        }
+    }
+
+    .icons-text-container {
+        max-width: 46%;
+        margin: 26px auto;
+        padding: 10px;
+    }
+
+    .icons-text-caption {
+        text-align: center;
+    }
+
+    .icons-text-p {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .icon-block-flex {
+        flex-direction: column;
+    }
+
+    .hidden {
+        display: block;
+        margin-left: auto;
+        max-width: 650px;
+        margin-left: 25%;
+    }
+
+    .revolutionary-editor-header {
+        font-size: 26px; 
+    }
+
+    .revolutionary-editor p {
+        font-size: 14px; 
+    }
+
+    .watch-btn {
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 346px) {
+    .here-is-what-you-get {
+        padding: 160px 10px;
+        background: $white;
+    }
+
+    .right-side {
+        top: 2%;
+        left: 0;
+
+        & h3 {
+            font-size: 30px;
+        }
+
+        & img {
+            display: none;
+        }
+    }
+
+    .icons-text-container {
+        max-width: 46%;
+        margin: 26px auto;
+        padding: 10px;
+    }
+
+    .icons-text-caption {
+        text-align: center;
+    }
+
+    .icons-text-p {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .icon-block-flex {
+        flex-direction: column;
+    }
+
+    .hidden {
+        display: block;
+        margin-left: auto;
+        max-width: 650px;
+        margin-left: 25%;
+    }
+
+    .revolutionary-editor-header {
+        font-size: 26px; 
+    }
+
+    .revolutionary-editor p {
+        font-size: 14px; 
+    }
+
+    .watch-btn {
+        margin: 10px;
+    }
+}

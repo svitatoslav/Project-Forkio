@@ -1,0 +1,319 @@
+
+a {
+    text-decoration: none;
+    color: $white;
+  }
+  
+  .header__container {
+    margin: 0 auto;
+    max-width: 1200px;
+  
+  }
+  
+  .header {
+    background-image: url("../img/header__section.png");
+    background-repeat: no-repeat;
+    min-height: 750px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 140px;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 10px 0 10px;
+  }
+  
+  .header__logo-item {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .header__logo-link {
+    margin-left: 10px;
+    text-transform: uppercase;
+    @include lato700;
+    font-size: 24px;
+    transition: .2s ease;
+  }
+  
+  
+  .header__nav {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .nav__link {
+    @include font16;
+    @include montserrat700;
+    transition: .2s ease;
+  
+    &:hover {
+      color: $purple;
+    }
+  }
+  
+  .nav__link-item {
+    margin-right: 45px;
+  }
+  
+  
+  .header__btn {
+    background: $white;
+    color: $purple;
+    padding: 8px 34px;
+    border-radius: 20px;
+    border: 1px solid $purple;
+    @include font16;
+    @include montserrat700;
+    transition: .2s ease;
+  }
+  
+  .header__btn:hover {
+    color: $white;
+    background: $purple;
+  }
+  
+  // Middle header section
+  
+  
+  .middle__header-section {
+    margin-top: 80px;
+    text-align: center;
+  }
+  
+  .middle__title {
+    @include montserrat700;
+    font-size: 82px;
+    color: $white;
+    margin-bottom: 10px;
+  }
+  
+  .middle__subtitle {
+    @include lato400;
+    font-size: 30px;
+    color: $purple;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    color: $small__text;
+    font-size: 16px;
+    @include montserrat400;
+  }
+  
+  .big__header-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    padding: 22px 0;
+    width: 388px;
+    text-align: center;
+    border-radius: 40px;
+  }
+  
+  .font__text {
+    font-size: 14px;
+    position: absolute;
+    bottom: -8%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+  // people talk start  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.block-cards {
+    @include flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.subscription-pricing {
+    @include montserrat-700;
+    color: $white;
+    font-size: 48px;
+    line-height: 50px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.fork-subscription-pricing {
+    padding: 40px 0;
+    background: $subscribtion-price;
+}
+
+.card {
+    @include flex;
+    flex-direction: column;
+    position: relative;
+    width: 23%;
+    height: 450px;
+    background: $card-background;
+
+    & hidden-line {
+        opacity: 0;
+    }
+
+    & h4 {
+        @include montserrat-400;
+        color: $white;
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 24px;
+        word-wrap: break-word;
+        padding: 30px 0;
+        text-align: center;
+    }
+}
+
+.special-card {
+    @include flex;
+    flex-direction: column;
+    position: relative;
+    background: $special-card-background;
+    width: 23%;
+    height: 550px;
+
+    & h4 {
+        @include montserrat-400;
+        color: $white;
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 24px;
+        word-wrap: break-word;
+        text-align: center;
+        padding: 30px 0;
+    }
+}
+
+.price {
+    @include montserrat-400;
+    color: $white;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 90px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-bottom: 3%;
+
+    & span {
+        @include montserrat-700;
+        color: $white;
+        font-size: 60px;
+        text-transform: uppercase;
+        line-height: 90px;
+        word-wrap: break-word;
+    }
+
+}
+
+.special-price {
+    font-size: 82px;
+
+    & span {
+        font-size: 82px;
+    }
+}
+
+.monthly {
+    @include montserrat-400;
+    color: $white;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 16px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.bar {
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: $card-bar;
+    margin: 15% auto;
+}
+
+.license {
+    @include montserrat-400;
+    color: $white;
+    font-size: 16px;
+    line-height: 18px;
+    word-wrap: break-word;
+    text-align: center;
+    max-width: 98%;
+}
+
+.special-license {
+    margin-bottom: 20%;
+}
+
+.purchase-btn {
+    @include montserrat-400;
+    color: $white;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 15px;
+    word-wrap: break-word;
+    border: 1px solid #79636b; ;
+    border-radius: 30px;
+    padding: 10px 28px;
+    background: $purchase-btn-background;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15%;
+}
+
+.h4-container {
+    width: 100%;
+    background: #79636b;
+    position: absolute;
+    top: 0;
+}
+
+.h4-special-container {
+    width: 100%;
+    background: #412d42;
+    position: absolute;
+    top: 0;
+}
+
+// MEDIA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@media screen and (min-width: 481px) and (max-width: 992px) {
+    .block-cards {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    .card {
+        width: 35%;
+    }
+
+    .special-card {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .subscription-pricing {
+        font-size: 28px;
+    }
+
+    .block-cards {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .special-card {
+        width: 90%;
+    }
+}
