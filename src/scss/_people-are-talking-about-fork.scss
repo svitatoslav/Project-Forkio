@@ -46,6 +46,7 @@
   "main4 main5 main6";
     justify-content: center;
     gap: 110px;
+    align-items: center;
   }
   
   .first-item {
@@ -85,10 +86,6 @@
   margin-bottom: 10px;
 }
 
-
-
-
-
 .main__item {
     max-width: 316px;
     text-align: center;
@@ -114,8 +111,6 @@
     padding: 60px 0 20px;
     line-height: 21px;
   }
-
-
 
   .hamburger {
     position: absolute;
@@ -239,7 +234,7 @@
       order: 2;
       flex-basis: content;
       box-sizing: border-box;
-      justify-self: end;
+justify-self: end;
     }
   
     .nav__link-item {
