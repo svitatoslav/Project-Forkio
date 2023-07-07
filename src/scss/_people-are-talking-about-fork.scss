@@ -3,7 +3,7 @@
     background-image: url("../img/people__talking-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 10px;
+    // padding: 0 10px;
   }
 
 .nav__link-item {
@@ -46,7 +46,6 @@
   "main4 main5 main6";
     justify-content: center;
     gap: 110px;
-    align-items: center;
   }
   
   .first-item {
@@ -149,7 +148,7 @@
     transform: translateY(-8px) rotate(-45deg);
   }
   
-  @media screen and (min-width: 993px) and (max-width: 1199px) {
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
   
     .main__wrapper {
       display: grid;
