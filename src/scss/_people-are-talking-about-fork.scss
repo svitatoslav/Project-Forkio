@@ -85,6 +85,14 @@
   margin-bottom: 10px;
 }
 
+.people-title {
+  @include font48;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 70px;
+}
+
+
 .main__item {
     max-width: 316px;
     text-align: center;
@@ -115,7 +123,7 @@
       bottom: 0;
       left: 7%;
       max-width: 780px;
-      width: 100%;
+      width: 90%;
       background-color: $border;
       content: "";
       height: 2px;
@@ -160,7 +168,7 @@
     transform: translateY(-8px) rotate(-45deg);
   }
   
-  @media screen and (min-width: 993px) and (max-width: 1200px) {
+  @media screen and (min-width: 993px) and (max-width: 1199px) {
   
     .main__wrapper {
       display: grid;
@@ -183,7 +191,7 @@
       margin-top: 40px;
     }
     .people__subtext::after {
-      max-width: 555px;
+      max-width: 600px;
       left: 18%;
     }
 
@@ -195,8 +203,8 @@
   @media screen and (min-width: 481px) and (max-width: 992px) {
 
     .people__subtext::after {
-      width: 250px;
-      left: 32%;
+      max-width: 550px;
+      margin: 0 auto;
     }
   
     .header__logo-item {
@@ -265,6 +273,10 @@ justify-self: end;
     .middle__subtitle {
       font-size: 24px;
     }
+
+    .people-title {
+      font-size: 42px;
+    }
   
   }
   
@@ -273,7 +285,7 @@ justify-self: end;
 
     .people__subtext::after {
       max-width: 250px;
-      left: 0;
+      margin: 0 auto;
     }
   
     .nav {
