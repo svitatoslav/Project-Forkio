@@ -109,7 +109,19 @@
     position: relative;
     padding: 60px 0 20px;
     line-height: 21px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 7%;
+      max-width: 780px;
+      width: 100%;
+      background-color: $border;
+      content: "";
+      height: 2px;
+    }
   }
+
 
   .hamburger {
     position: absolute;
@@ -148,7 +160,7 @@
     transform: translateY(-8px) rotate(-45deg);
   }
   
-  @media screen and (min-width: 993px) and (max-width: 1200px) {
+  @media screen and (min-width: 993px) and (max-width: 1199px) {
   
     .main__wrapper {
       display: grid;
@@ -170,12 +182,22 @@
       position: relative;
       margin-top: 40px;
     }
+    .people__subtext::after {
+      max-width: 555px;
+      left: 18%;
+    }
+
   
   
   }
   
   
   @media screen and (min-width: 481px) and (max-width: 992px) {
+
+    .people__subtext::after {
+        margin: 0 auto;
+        max-width: 600px;
+    }
   
     .header__logo-item {
       order: 1;
@@ -245,9 +267,22 @@ justify-self: end;
     }
   
   }
+
+  @media screen and (min-width: 479px) and (max-width: 700px) {
+    .people__subtext::after {
+        max-width: 400px;
+        right: 0;
+        left: 0;
+    }
+  }
   
   
   @media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .people__subtext::after {
+      max-width: 250px;
+      left: 0;
+    }
   
     .nav {
       background-color: $mob__nav;
