@@ -28,17 +28,24 @@ a {
   }
   
   .header__logo-link {
-    margin-left: 10px;
+    color:  $purple;
+    padding-left: 10px;
     text-transform: uppercase;
     @include lato700;
     font-size: 24px;
     transition: .2s ease;
+    &:hover {
+      color: $white;
+    }
+
   }
 
-  
+
+
+
   .header__btn {
-    background: $white;
-    color: $purple;
+    color: $white;
+    background: $purple;
     padding: 8px 34px;
     border-radius: 20px;
     border: 1px solid $purple;
@@ -48,8 +55,9 @@ a {
   }
   
   .header__btn:hover {
-    color: $white;
-    background: $purple;
+
+    background: $white;
+    color: $purple;
   }
   
   // Middle header section
