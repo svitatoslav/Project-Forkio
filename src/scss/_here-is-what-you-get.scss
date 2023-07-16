@@ -78,7 +78,7 @@
         }
 
         & img {
-           max-width: 570px;
+           max-width: 550px;
         }
     }
 }
@@ -181,8 +181,12 @@
 
 @media screen and (min-width: 347px) and (max-width: 480px) {
     .here-is-what-you-get {
-        padding: 160px 10px;
+        padding: 0 10px;
         background: $white;
+    }
+
+    .five {
+        margin-top: 60px;
     }
 
     .right-side {
@@ -199,7 +203,7 @@
     }
 
     .icons-text-container {
-        max-width: 46%;
+        max-width: 100%;
         margin: 26px auto;
         padding: 10px;
     }
@@ -222,7 +226,6 @@
         display: block;
         margin-left: auto;
         max-width: 650px;
-        margin-left: 25%;
     }
 
     .revolutionary-editor-header {
@@ -240,12 +243,16 @@
 
 @media screen and (min-width: 320px) and (max-width: 346px) {
     .here-is-what-you-get {
-        padding: 160px 10px 0;
+        padding: 60px 10px 0;
         background: $white;
     }
 
+    .five {
+        margin-top: 60px;
+    }
+
     .right-side {
-        top: 2%;
+        top: 0;
         left: 0;
 
         & h3 {
@@ -258,7 +265,7 @@
     }
 
     .icons-text-container {
-        max-width: 46%;
+        max-width: 100%;
         margin: 26px auto;
         padding: 10px;
     }
@@ -281,7 +288,6 @@
         display: block;
         margin-left: auto;
         max-width: 650px;
-        margin-left: 25%;
     }
 
     .revolutionary-editor-header {
