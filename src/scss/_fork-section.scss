@@ -111,11 +111,14 @@ a {
     margin-top: 60px;
 }
 
-.fork-subscription-pricing {
+.fork-subscription-pricing-wrapper {
     padding: 40px 0;
-    background: $subscribtion-price;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.fork-subscription-pricing {
+    background: $subscribtion-price;
 }
 
 .card {

@@ -1,12 +1,15 @@
 .here-is-what-you-get {
+    background: $here-is-what-you-get-background;
+}
+
+.here-is-what-you-get-wrapper {
     position: relative;
     @include flex;
     flex-direction: column;
-    background: $here-is-what-you-get-background;
     padding: 80px 10px;
     overflow: hidden;
     max-width: 1200px;
-    margin: 60px auto;
+    margin: 60px auto 0;
 }
 
 .icon-block-flex {
