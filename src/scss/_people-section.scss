@@ -3,7 +3,8 @@
     background-image: url("../img/people__talking-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    max-height: 770px
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .nav__link-item {
@@ -37,13 +38,6 @@
     font-size: 30px;
     color: $purple;
     margin-bottom: 15px;
-}
-
-.people-title {
-    @include font48;
-    text-align: center;
-    padding-top: 100px;
-    margin-bottom: 70px;
 }
 
 
@@ -93,6 +87,15 @@
     color: $white;
        margin-bottom: 10px;
 }
+
+.people-title {
+    @include font48;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 70px;
+}
+
+
 
 .main__item {
     max-width: 316px;
