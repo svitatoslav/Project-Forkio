@@ -85,7 +85,7 @@
 
 @media screen and (min-width: 690px) and (max-width: 992px) {
     .right-side {
-       top: 6%;
+       top: 0;
         left: 0;
 
         & h3 {
@@ -119,12 +119,11 @@
 
 @media screen and (min-width: 658px) and (max-width: 722px) {
     .here-is-what-you-get {
-        // margin-top: 20%;
         background: $white;
     }
 
     .right-side {
-        top: 2%;
+        top: 0;
         left: 0;
 
         & h3 {
